@@ -1,0 +1,86 @@
+:host(){
+    --dark-blue:#0b0d21;
+    --light-white:#fafafa;
+    --light-blue:#4f77df9;
+    --light-pink:#e91e63;
+    --dull-blue:#1d1e33;
+    --size-16:16px;
+    --size-14:14px;
+    --size-12:12px;
+}
+
+
+.box{
+    background-color:rgb(13, 13, 57);
+    color: var(--light-white);
+    margin: auto;
+    max-width: 420px;
+    text-align: center;
+    padding: var(--size-16);
+    border-radius: 20px;
+    
+}
+
+h1{
+    font-size: 32px;
+    padding: 20px 0;
+    font-style: initial;
+    font-weight: 600;
+}
+
+.info-wrapper{
+    
+        background-color: var(--dull-blue);
+        padding: var(--size-16);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        font-size: var(--size-14);
+        text-align: center;
+}
+
+h2{
+    font-size: 20px;
+    color:var(--light-pink);
+
+}
+
+.app{
+    background-image: -moz-linear-gradient();
+    min-height: 100vh;
+    background-image: url(/sfsites/c/resource/gym);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+label{
+
+color: white;
+font-size: 20px;
+
+}
+
+input{
+color: black;
+padding: 8px;
+font-size: 20px;
+}
+
+button{
+    color: lightcyan;
+    font-size: x-large;
+    font-weight: 700;
+    font-style: normal;
+    background-color: red;
+    /* border-radius: 90px; */
+    padding: 16px;
+    border-radius: 16px;
+    border-color: darkred;
+}
+
+.custom{
+    font-size: 25px;
+    font-weight: 500;
+    color: cornflowerblue;
+}
