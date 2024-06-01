@@ -1,0 +1,14 @@
+@media (max-width:720px){
+   .formname{
+    text-align: center;
+    font-weight: 500;
+   }
+   button{
+    margin-top: 30px;
+   }
+}
+
+.formname{--slds-c-badge-color-background:#ADBBDA;
+   --slds-c-badge-text-color:#181818;
+   --slds-c-badge-font-size:15px;}
+

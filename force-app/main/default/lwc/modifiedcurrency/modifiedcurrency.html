@@ -1,0 +1,64 @@
+<template>
+    <lightning-card title="Currency Calculator" icon-name="doctype:link"  >
+<div class="stylefont">
+<!--Input tag-->
+<lightning-input  label="Enter the amount" name="input" onchange={handlerchange}></lightning-input>
+</div>
+
+<div class="styleme">
+<!--From and to currency tag-->
+
+<div class="slds-grid slds-gutters">
+    <div class="slds-col">
+    <span>
+        <lightning-combobox class="stylefont"
+                name="Fromval"
+                label="From Currency"
+                options={options}
+                onchange={handlerchange} ></lightning-combobox>
+    
+        <p>Selected value is: {fromcurrency}</p>
+    </span>
+    </div>
+    <div class="slds-col">
+    <span> <lightning-combobox class="stylefont"
+        name="Toval"
+        label="To currency"
+        options={options}
+        onchange={handlerchange} ></lightning-combobox>
+        <p>Selected value is: {tocurrency}</p>
+    </span>
+    </div>
+    </div>
+</div>
+
+
+<div class="styleme">
+<!--button tag-->
+<lightning-button name="button" label="Submit" onclick={buttonclick} variant="Success"></lightning-button>
+</div>
+
+<template lwc:if={showit}>
+<div class="styleme">
+<!--Output tag-->   
+<p> Converted Value is:</p>
+<p><lightning-formatted-number value={convertedvalue} format-style="currency" currency-code={tocurrency}></lightning-formatted-number></p>
+    
+
+</div>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</lightning-card>
+</template>

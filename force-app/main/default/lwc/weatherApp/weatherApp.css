@@ -1,0 +1,169 @@
+.app{
+    background-image: url(/sfsites/c/resource/clo);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+
+
+}
+
+
+
+.box{
+    background: skyblue;
+    max-width: 400px;
+    min-width: 375px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 40px;
+    padding-bottom: 0px;
+    
+   
+}
+
+
+button{
+   background-color:midnightblue;
+   padding: 20px;
+   color: aliceblue;
+   font-size: large;
+   font-weight: 700;
+   border-radius: 10px;
+   box-shadow: 0px 0px 40px;
+   margin-bottom: 20px;
+   
+   
+}
+
+h1{
+    padding: 20px;
+    color: midnightblue;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+}
+
+input{
+min-height: 50px;
+font-size: large;
+text-align: center;
+border-radius: 5px;
+}
+
+.load{
+    color: green;
+    background: #d4edda;
+    border: 1px solid;
+    border-style: dotted;
+    border-radius: 2px;
+    padding: 9px;
+    text-align: left;
+    margin: 12px;
+}
+
+.errors{
+    color: white;
+    background: red;
+    border: 1px solid;
+    border-style: dotted;
+    border-radius: 2px;
+    padding: 9px;
+    text-align: left;
+    margin: 12px;
+}
+
+.location{
+    font-size: 24px;
+    line-height: normal;
+    padding-top: 24px;
+}
+
+.temperature{
+    font-size: 60px;
+    line-height: normal;
+    font-weight: 400;
+    padding-top: 24px;
+}
+
+.description{
+    font-size: 24px;
+    line-height: normal;
+    
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid white;
+    
+}
+
+.left{
+    width: 100%;
+    padding: 16px;
+    font-weight: 600;
+}
+
+
+.right{
+    width: 100%;
+    border-left: 1px solid white;
+    padding: 16px;
+    font-weight: 600;
+}
+
+.weatherimg{
+    max-width: 125px;
+}
+
+.buttonback{
+    cursor: pointer;
+}
+
+
+:host{
+    --lwc-inputStaticFontSize: 14px;
+    --lwc-inputStaticFontWeight: bold;
+ }
+
+
+
+.modifyitem1{
+    
+    text-align: center !important;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+   height: 60px  !important;
+   padding: 1.7% !important;
+   min-height: 40px !important;
+  
+
+
+}
+
+.modifyitem2{
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+
+}
+
+label{
+    font-size: 15px;
+}
+
+
+.mod{
+    white-space: normal;
+}

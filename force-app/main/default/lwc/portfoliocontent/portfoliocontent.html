@@ -1,0 +1,36 @@
+<template>
+    <div class="Banner">
+    <img src={userPic} alt="image" class="profile-pic">
+    <div class="Name">Akshay Raina</div>
+    <div class="Designation"> Salesforce Developer and Administrator at Cognizant</div>
+    <div class="Location"> Pune, Maharashtra, India</div>
+
+    <div class="Socials">
+
+       
+            <a href={LinkedinUrl} target="_blank" >
+                <img src={linkedin} class="social-icon">
+            </a>
+       
+
+
+        <template if:true={trailheadurl}>
+            <a href={trailheadurl} target="_blank">
+                <img src={trailhead} class="social-icon">
+            </a> 
+        </template>
+       
+        
+       
+     <template if:true={intagramurl}>
+    <a href={intagramurl} target="_blank">
+        <img src={instagram} class="social-icon">
+    </a> 
+        </template>
+        
+
+        
+
+    </div>
+</div>
+</template>

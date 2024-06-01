@@ -1,0 +1,156 @@
+<template>
+  <div class="app">
+    <div class="box">
+      <template if:true={response}>  
+        <img class="buttonback slds-m-right_small" src={arrowbackicon} onclick={clickhandler}></template>
+      <h1>Weather App</h1>
+   
+   <template if:true={loadingtext}>
+   <div class={dynamicallo}>{loadingtext}  </div></template>
+   <template if:false={response}>  
+   <div class="input slds-var-m-top_large">
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="text-input-id-2">
+        <abbr class="slds-required" title="required"> </abbr></label>
+        
+        <form onsubmit={submithandler}>     
+           <!-- <input type="text" id="text-input-id-2" placeholder="Enter city name" required="" class="slds-input" onkeyup={searchhandler} />-->
+
+            <!-----------------------------------------------------------------------------------------------------------------Combo box-->
+
+
+
+
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="listbox-id-1" id="combobox-label-id-132"></label>
+              <div class="slds-form-element__control">
+              <div class="slds-combobox_container">
+              <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+              <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+             <lightning-input 
+             variant="label-hidden"
+              onchange={changingcity} 
+              placeholder="Search your city..."
+              value={clickedvalue}
+              class="modifyitem1"
+              required="true"
+              ></lightning-input> 
+              <span class="slds-icon_container slds-icon-utility-search slds-input__icon slds-input__icon_right">
+              
+              </span>
+              </div>
+              <template if:true={showoptions}>
+              <div id="listbox-id-15" class="slds-dropdown slds-dropdown_length-with-icon-7" role="listbox"  tabindex="0" aria-busy="false">
+              <ul class="slds-listbox slds-listbox_vertical" role="group" >
+                <template for:each={cities} for:item=city>
+              <li 
+              role="presentation" 
+              class="slds-listbox__item"
+              key={city.Id}
+              onclick={clickhandled}>
+              
+              <div id="option738" class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta modifyitem2" role="option">
+              <span class="slds-media__figure slds-listbox__option-icon">
+              <span class="slds-icon_container slds-icon-standard-account">
+              </span>
+              </span>
+              <span class="slds-media__body">
+              <span class=" slds-listbox__option-text_entity mod" data-recid={city.Name} >{city.Name}</span>
+              <span class="slds-listbox__option-meta ">{city.Country_name__c}</span>
+              </span>
+              </div>
+              </li>
+              
+            </template>
+              </ul>
+              </div>
+            </template>
+          
+              </div>
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----------------------------------------------------------------------------------------------------------------Combo box-->
+
+
+
+
+
+
+
+
+
+            <button class="slds-button slds-button_neutral slds-button_stretch slds-var-m-top_small" type="submit">Show Weather details</button>
+  </form>
+        
+        </div>
+   </div>
+  </template>
+<template if:true={response}>
+   <section class="slds-m-around_large">
+   <img src={weathericon} alt="Icon" class="weatherimg">
+<div class="temperature">
+  <span>{response.temperature}</span>
+  <span>°</span>C
+</div>
+<div class="description">
+  {response.description}
+</div>
+<div class="location">
+  <img src={mapicon} alt="Icon">
+<span>{response.location}</span>
+</div>
+   </section>
+
+   <footer>
+    <div class="left">
+      <img src={thermometericon} alt="Icon">
+      <div>{response.feels_like}° C</div>
+      <p>Feels like</p>
+    </div>
+
+    <div class="right">
+      <img src={dropleticon} alt="Icon">
+      <div>{response.humidity}</div>
+      <p>Humidity</p>
+    </div>
+   </footer>
+  </template>
+ 
+    </div>
+  </div>  
+</template>

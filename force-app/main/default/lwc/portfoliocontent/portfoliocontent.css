@@ -1,0 +1,103 @@
+.Banner{
+    background-image: url(/sfsites/c/resource/azs);
+    background-size: cover;
+    min-height: 300px;
+    text-align: center;
+    padding: 40px;
+}
+
+
+
+
+
+img{
+    height: 220px;
+    border-radius: 50%;
+    border-style: outset;
+    transition: transform .2s;
+
+    
+    
+}
+
+img:hover, .Location:hover,.Designation:hover,.Name:hover {-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); }
+
+
+.Location{
+    font-size: 24px;
+    font-family: Gotham SSm A, Gotham SSm B, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #181818;
+    transition: transform .2s;
+    
+}
+
+.Designation{
+    font-size: 24px;
+    color: #181818;
+    font-weight: 500;
+    transition: transform .2s;
+    
+    font-family: Gotham SSm A, Gotham SSm B, Helvetica, sans-serif;
+}
+
+.Name{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Gotham SSm A, Gotham SSm B, Helvetica, sans-serif;
+    transition: transform .2s;
+}
+
+
+.social-icon{
+    
+    
+    height: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Socials{
+    padding: 20px;
+}
+
+
+@media(max-width:720px){
+    img{
+        height: 190px;
+        border-radius: 50%;
+        border-style: outset;
+        
+    }
+  .Name{
+    color: white;
+    font-family: monospace;
+  }
+   
+    .Banner{
+        background-image: url(/sfsites/c/resource/azs);
+        background-size: cover;
+        min-height: 300px;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .Location{
+        font-size: 19px;
+        font-family: Gotham SSm A, Gotham SSm B, Helvetica, sans-serif;
+        font-weight: 500;
+        color: white;
+        
+    }
+    
+    .Designation{
+        font-size: 19px;
+        color: white;
+        font-weight: 500;
+        
+        font-family: Gotham SSm A, Gotham SSm B, Helvetica, sans-serif;
+    }
+}
+

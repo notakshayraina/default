@@ -1,0 +1,71 @@
+<template>
+    <div class="show-tabs-on-desktop-view">
+       
+            <lightning-tabset variant="scoped">
+                <lightning-tab label="Profile Overview" >
+                    <c-profilecontent></c-profilecontent>
+                </lightning-tab>
+                <lightning-tab label="Personal Projects">
+                    <c-portfolioprojects></c-portfolioprojects>
+                </lightning-tab>
+                <lightning-tab label="Work Experience">
+                   <c-portfolioworkexperice></c-portfolioworkexperice>
+                </lightning-tab>
+                <lightning-tab label="Skills">
+                    <c-portfolioskills></c-portfolioskills>
+                </lightning-tab>
+                <lightning-tab label="Education">
+                   <c-portfolioeducation></c-portfolioeducation>
+                </lightning-tab>
+                <lightning-tab label="Certifications">
+                    <c-portfoliocertifications></c-portfoliocertifications>
+                </lightning-tab>
+                <lightning-tab label="Others">
+                   <c-portfolioothers></c-portfolioothers>
+                </lightning-tab>
+            </lightning-tabset>
+     
+
+    </div>
+
+
+    <div class="accor show-tabs-on-mobile-view">
+
+        
+            <lightning-accordion
+                allow-multiple-sections-open
+            
+            >
+                <lightning-accordion-section name="Summary" label="Summary">
+                    <c-profilecontent></c-profilecontent>
+                </lightning-accordion-section>
+        
+                <lightning-accordion-section name="Personal Projects" label="Personal Projects">
+                    <c-portfolioprojects></c-portfolioprojects>
+                </lightning-accordion-section>
+        
+                <lightning-accordion-section name="Work Experience" label="Work Experience">
+                    <c-portfolioworkexperice></c-portfolioworkexperice>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Skills" label="Skills">
+                    <c-portfolioskills></c-portfolioskills>
+                </lightning-accordion-section>
+
+
+                <lightning-accordion-section name="Education" label="Education">
+                    <c-portfolioeducation></c-portfolioeducation>
+                </lightning-accordion-section>
+
+
+                <lightning-accordion-section name="Certifications" label="Certifications">
+                    <c-portfoliocertifications></c-portfoliocertifications>
+                </lightning-accordion-section>
+
+                <lightning-accordion-section name="Others" label="Others">
+                    <c-portfolioothers></c-portfolioothers>
+                </lightning-accordion-section>
+            </lightning-accordion>
+        
+    </div>
+</template>

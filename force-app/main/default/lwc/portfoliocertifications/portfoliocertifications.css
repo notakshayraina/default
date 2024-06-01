@@ -1,0 +1,25 @@
+span{
+    color: black;
+}
+
+img{height: 60px;
+    margin-right: 16px;
+}
+
+
+
+.cert-box{
+
+    padding: 12px;
+    background-image: url(/sfsites/c/resource/Alarm4);
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;}
+
+
+    .cert-box:hover{
+        background-color: #8697C4;
+        cursor: pointer;
+    }

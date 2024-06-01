@@ -1,0 +1,33 @@
+<template>
+    
+                    <lightning-record-view-form
+                    class="formname"
+                    object-api-name={objectapiname}
+                    record-id={records}
+                    density="comfy">
+                    <lightning-layout multiple-rows>
+                        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+                        <lightning-output-field label="" field-name="Email"></lightning-output-field>
+                        </lightning-layout-item>
+    
+                        <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+                            <lightning-output-field field-name="MobilePhone"></lightning-output-field>
+                            </lightning-layout-item>
+
+                            <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+                                <lightning-output-field field-name="MailingAddress"></lightning-output-field>
+                                </lightning-layout-item>
+
+                                <lightning-layout-item size="12" small-device-size="4" medium-device-size="3">
+                                    <lightning-button icon-name="action:download" label="Download the latest resume" onclick={downloadresume}
+                                    class="slds-var-m-left_x-small slds-var-m-bottom_medium"></lightning-button>
+                                    </lightning-layout-item>
+        
+    
+                    </lightning-layout>
+
+
+                    
+                
+ </lightning-record-view-form>
+</template>
