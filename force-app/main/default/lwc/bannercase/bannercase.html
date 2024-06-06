@@ -1,0 +1,17 @@
+<template>
+    <div class="box">
+
+<h1>The case info has been masked, Therefore you are not able to see the PII data, to access the data please click below button:</h1>
+<template if:true={showbutton}>
+    <button class="slds-button slds-button_brand" onclick={showhandler}>Show details</button>
+</template>
+<template if:false={showbutton}>
+    <button class="slds-button slds-button_brand" onclick={hidehandler}>Hide details</button>
+</template>
+
+
+
+
+    </div>
+
+</template>
