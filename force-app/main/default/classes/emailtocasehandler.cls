@@ -49,6 +49,8 @@ Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mymail });
     }
 
 //---------------------------------------------------------------
+finally{
+    
 Messaging.SingleEmailMessage mymail = new Messaging.SingleEmailMessage();
 String[] toaddresses = new String[] {emailaddress}; 
 
@@ -59,7 +61,7 @@ mymail.setPlainTextBody('This email has been sent through Apex, we have created 
 
 Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mymail });
 
-
+}
 
 //-------------------------------------------------------
 
